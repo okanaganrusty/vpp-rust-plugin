@@ -1,4 +1,5 @@
 # vpp-rust-plugin
+
 This is an experiment with making a VPP plugin in Rust.
 
 It is a very early stage code, and mostly for exploring this myself,
@@ -16,7 +17,7 @@ Also, you will notice that some of the types are not exactly
 (or not at all) the same as in VPP proper - these are shortcuts,
 which may be fixed later on. Or not.
 
-# Compiling
+## Compiling
 
 After installing rust (https://www.rust-lang.org/en-US/install.html),
 And the dependencies ("apt-get install llvm-3.9-dev libclang-3.9-dev clang-3.9")
@@ -27,11 +28,7 @@ of your VPP instance.
 
 Assuming the "vpp" tree is in your home directory, it will look like this:
 
-cp target/debug/librust_plugin.so ~/vpp/build-root/install-vpp_debug-native/vpp/lib/vpp_plugins/
-
-
-
-
-
-
-
+```bash
+cp vpp-rust-plugin/target/debug/librust_plugin.so vpp/build-root/install-vpp_debug-native/vpp/lib/x86_64-linux-gnu/vpp_plugins/rust_test
+cp vpp-rust-plugin/target/debug/librust_plugin.so vpp/build-root/build-vpp_debug-native/vpp/lib/x86_64-linux-gnu/vpp_plugins/rust_test
+```

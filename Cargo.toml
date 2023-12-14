@@ -5,7 +5,6 @@ authors = ["Andrew Yourtchenko <ayourtch@gmail.com>"]
 
 [dependencies]
 
-
 [lib]
 name = "rust_plugin"
 crate-type = ["dylib"]
